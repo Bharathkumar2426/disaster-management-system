@@ -1,0 +1,27 @@
+# Node
+node_modules/
+
+# React
+dist/
+
+# Java
+target/
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Python
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
