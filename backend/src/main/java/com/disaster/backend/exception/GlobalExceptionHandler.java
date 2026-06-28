@@ -41,4 +41,12 @@ public class GlobalExceptionHandler {
 
     }
 
+    @ExceptionHandler(TrainingCenterNotFoundException.class)
+    public ResponseEntity<String> handleTrainingCenterNotFoundException(
+        TrainingCenterNotFoundException ex) {
+
+    return ResponseEntity.status(HttpStatus.NOT_FOUND)
+            .body(ex.getMessage());
+    }
+
 }
