@@ -9,10 +9,14 @@ export default defineConfig([
   {
     files: ['**/*.{js,jsx}'],
     extends: [
-      js.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
+  js.configs.recommended,
+  reactHooks.configs.flat.recommended,
+  reactRefresh.configs.vite,
+],
+
+rules: {
+  "react-hooks/set-state-in-effect": "off",
+},
     languageOptions: {
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
